@@ -21,9 +21,7 @@ pip install -r requirements.txt
 * Пароль ```DB_PASSWORD``` string
 * Секретный ключ для шифрования паролей ```SECRET_KEY``` string
 * Список строк, представляющих имена хостов/доменов, которые может обслуживать этот Django-сайт ```ALLOWED_HOSTS``` list
-
-Если потребуется отладочный режим:
-```DEBUG=True```
+* Отладочный режим ```DEBUG``` bool
 
 Запуск скрипта:
 ```python manage.py runserver 0.0.0.0:8000```
