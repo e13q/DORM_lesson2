@@ -13,12 +13,14 @@ pip install -r requirements.txt
 Также, потребуется наличие файла .env.
 В файле .env должны быть указаны:
 
-* Движок бд ```DB_ENGINE```
-* Адрес бд ```DB_HOST```
-* Порт бд ```DB_PORT```
-* Имя бд ```DB_NAME```
-* Логин пользователя ```DB_USER```
-* Пароль ```DB_PASSWORD```
+* Движок бд ```DB_ENGINE``` string
+* Адрес бд ```DB_HOST``` string
+* Порт бд ```DB_PORT``` int
+* Имя бд ```DB_NAME``` string
+* Логин пользователя ```DB_USER``` string
+* Пароль ```DB_PASSWORD``` string
+* Секретный ключ для шифрования паролей ```SECRET_KEY``` string
+* Список строк, представляющих имена хостов/доменов, которые может обслуживать этот Django-сайт ```ALLOWED_HOSTS``` list
 
 Если потребуется отладочный режим:
 ```DEBUG=True```
